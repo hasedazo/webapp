@@ -3,13 +3,14 @@ package com.example.webapp;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.example.webapp.repository.ApiAuthMapper;
+//import com.example.webapp.repository.ApiAuthMapper;
+import com.example.webapp.apiauth.ApiAuthRepository;
 
 import lombok.RequiredArgsConstructor;
 
 @SpringBootApplication
 @RequiredArgsConstructor
-public class WebappApplicationTest {
+public class WebappApplicationTest{
 /*
 	public static void main(String[] args) {
 		SpringApplication.run(WebappApplication.class, args);
@@ -20,11 +21,13 @@ public class WebappApplicationTest {
 	}
 	
 	/**DI*/
-	private final ApiAuthMapper mapper;
+	//private final ApiAuthMapper mapper;
+	private final ApiAuthRepository mapper;
 	
 	public void exe() {
 		System.out.println("取得テスト");
-		System.out.println(mapper.findByApiKeyAndCliendIp("10.100.100","abcdefghij"));
+		//System.out.println(mapper.findByApiKeyAndCliendIp("10.100.100","abcdefghij"));
+		System.out.println(mapper.findByApiKey("abcdefghij"));
 	}
 	
 	
