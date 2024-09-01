@@ -15,4 +15,4 @@ VALUES
 -- 認証用のデータ登録
 INSERT INTO apiauth (client_ip, api_key, ninka, start_at, end_at)
 VALUES
-('10.100.100','abcdefghij','login',TO_TIMESTAMP('2025/04/01 00:00:00','YYYY/MM/DD HH24:MI:SS'),TO_TIMESTAMP('2022/04/02 00:00:00', 'YYYY/MM/DD HH24:MI:SS'));
+('10.100.100','abcdefghij','login',TO_TIMESTAMP('2024/04/01 00:00:00','YYYY/MM/DD HH24:MI:SS'),TO_TIMESTAMP('2025/09/10 00:00:00', 'YYYY/MM/DD HH24:MI:SS'));

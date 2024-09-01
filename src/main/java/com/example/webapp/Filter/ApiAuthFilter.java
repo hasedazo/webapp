@@ -31,8 +31,8 @@ public class ApiAuthFilter extends OncePerRequestFilter {
         // リクエストからAPIキーとクライアントIPアドレスを取得
         //String apiKey = request.getHeader("X-API-KEY");
         //String clientIp = request.getRemoteAddr();
-        String apiKey = "10.100.100";
-        String clientIp = "abcdefghij";
+        String apiKey = "abcdefghij";
+        String clientIp = "10.100.100";
         String requestUri = request.getRequestURI();
 
 

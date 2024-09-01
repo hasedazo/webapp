@@ -18,7 +18,10 @@ public class ApiAuthServiceImpl implements ApiAuthService{
 
     public boolean validateApiKey(String apiKey, String clientIp, String requestURL) {
     	// データ取得
-    	ApiAuth apiauth = ApiAuthMapper.findByApiKeyAndCliendIp(apiKey, clientIp);
+    	System.out.println(apiKey);
+    	System.out.println(clientIp);
+    	
+    	ApiAuth apiauth = ApiAuthMapper.findByApiKeyAndCliendIp(clientIp,apiKey);
     	
     	// データがない場合は認証失敗
     	if(apiauth == null){
